@@ -1,9 +1,11 @@
 ---
 auths:
-  public_v1:
-    version: 1
-  public_v2:
+  edgerouter:
     version: 2
+    community: SachaWolf
+  public:
+    version: 2
+    community: public
 
 modules:
   # Default IF-MIB interfaces table with ifIndex.
@@ -30,6 +32,7 @@ modules:
   # Default IP-MIB with ipv4InterfaceTable for example.
   ip_mib:
     walk: [ipv4InterfaceTable]
+<<<<<<< Updated upstream
 
   readynas:
     walk:
@@ -752,3 +755,5 @@ modules:
   hrSWInstalled:
     walk:
       - hrSWInstalled
+=======
+>>>>>>> Stashed changes
